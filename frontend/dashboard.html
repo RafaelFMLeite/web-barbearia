@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbearia - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Dashboard da Barbearia</h1>
+        <button id="logout-button" class="logout-btn">Sair</button>
+
+        <div class="section">
+            <h2>Nossos Profissionais</h2>
+            <ul id="professionals-list">
+                </ul>
+        </div>
+
+        <div class="section">
+            <h2>Nossos Serviços</h2>
+            <ul id="services-list">
+                </ul>
+        </div>
+
+        <div class="section">
+            <h2>Agendar Novo Serviço</h2>
+            <form id="schedule-form">
+                <label for="prof-select">Profissional:</label>
+                <select id="prof-select" required></select>
+
+                <label for="service-select">Serviço:</label>
+                <select id="service-select" required></select>
+
+                <label for="date-input">Data:</label>
+                <input type="date" id="date-input" required>
+
+                <label for="time-input">Hora:</label>
+                <input type="time" id="time-input" required>
+
+                <button type="submit">Agendar</button>
+            </form>
+            <p id="schedule-message" class="message"></p>
+        </div>
+
+        <div class="section">
+            <h2>Meus Agendamentos</h2>
+            <ul id="appointments-list">
+                </ul>
+            <p id="appointments-message" class="message"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
